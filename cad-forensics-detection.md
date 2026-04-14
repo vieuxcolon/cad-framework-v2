@@ -9,9 +9,9 @@
 
 ## Abstract
 
-We introduce **CAD (Canonical Anomaly Detection)**, a model-level forensic framework for detecting architectural anomalies and backdoors in pretrained neural networks without requiring poisoned samples, trigger knowledge, or access to training data. CAD reframes backdoor detection as a **representation geometry stability problem**, quantifying structural deviations in latent embedding spaces induced by controlled perturbations.
+We introduce  CAD (Canonical Anomaly Detection) , a model-level forensic framework for detecting architectural anomalies and backdoors in pretrained neural networks without requiring poisoned samples, trigger knowledge, or access to training data. CAD reframes backdoor detection as a representation geometry stability problem, quantifying structural deviations in latent embedding spaces induced by controlled perturbations.
 
-We define a unified **risk function over representation drift, clustering instability, and component-level geometric distortion**, producing a scalar anomaly score:
+We define a unified  risk function over representation drift, clustering instability, and component-level geometric distortion , producing a scalar anomaly score:
 
 [
 \mathcal{R}(f_\theta)
@@ -32,7 +32,7 @@ Extensive evaluation across Hugging Face transformer models demonstrates strong 
 
 ## 1. Introduction
 
-Backdoor vulnerabilities in neural networks represent a critical challenge for safe deployment of pretrained models, particularly in open-weight ecosystems such as Hugging Face. Unlike traditional misclassification errors, backdoors are **latent behavioral modifications embedded in model parameters**, often remaining undetectable under standard evaluation protocols.
+Backdoor vulnerabilities in neural networks represent a critical challenge for safe deployment of pretrained models, particularly in open-weight ecosystems such as Hugging Face. Unlike traditional misclassification errors, backdoors are  latent behavioral modifications embedded in model parameters , often remaining undetectable under standard evaluation protocols.
 
 Existing detection approaches typically rely on:
 
@@ -46,7 +46,7 @@ However, these assumptions fail in modern model supply chains where:
 * fine-tuning obscures original poisoning signals
 * backdoors may be architecturally embedded
 
-We propose **CAD**, a forensic framework that shifts the detection paradigm from output behavior to **representation geometry auditing**.
+We propose  CAD , a forensic framework that shifts the detection paradigm from output behavior to  representation geometry auditing .
 
 ---
 
@@ -62,7 +62,7 @@ Backdoor attacks have been widely studied across deep learning systems, with sur
 
 ### 2.2 Activation-Based Detection
 
-Activation clustering methods identify poisoned samples via separability in hidden representations. However, these approaches operate at the **data level**, requiring poisoned inputs.
+Activation clustering methods identify poisoned samples via separability in hidden representations. However, these approaches operate at the  data level , requiring poisoned inputs.
 
 ---
 
@@ -74,7 +74,7 @@ Perturbation-based detection analyzes model sensitivity to adversarial inputs. T
 
 ### 2.4 Representation Geometry Analysis
 
-Recent work suggests that neural networks encode information in structured latent manifolds. Backdoors can therefore be interpreted as **geometric distortions in representation space**, motivating CAD.
+Recent work suggests that neural networks encode information in structured latent manifolds. Backdoors can therefore be interpreted as  geometric distortions in representation space , motivating CAD.
 
 ---
 
