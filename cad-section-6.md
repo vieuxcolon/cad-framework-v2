@@ -141,7 +141,7 @@ CAD differs fundamentally from prior work in three ways:
 
 ---
 
-### 🔹 (P1) Activation Clustering (Prior Work)
+###  (P1) Activation Clustering (Prior Work)
 
 * operates on **sample-level activations**
 * assumes poisoned data is available
@@ -151,7 +151,7 @@ CAD differs fundamentally from prior work in three ways:
 
 ---
 
-### 🔹 (P2) Spectral Signature Methods
+###  (P2) Spectral Signature Methods
 
 * analyze covariance anomalies in activations
 * assume linear separability of poisoned direction
@@ -163,7 +163,7 @@ CAD differs fundamentally from prior work in three ways:
 
 ---
 
-### 🔹 (P3) Perturbation-Based Detection
+###  (P3) Perturbation-Based Detection
 
 * relies on input-level adversarial probing
 * measures output instability
