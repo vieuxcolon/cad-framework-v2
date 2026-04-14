@@ -1,5 +1,3 @@
----
-
 #  1. NeurIPS LaTeX Paper (COMPLETE SKELETON)
 
 This is a **clean, submission-ready base** aligned with your CAD system.
