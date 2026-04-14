@@ -3,10 +3,6 @@
 ## 1) CAD ↔ BERT: End-to-End Forensic Mapping
 ---
 
-Yes — not only is it possible, it’s actually one of your strongest contributions: **you are auditing *inside* the architecture, not just outputs**.
-
-Here’s a clean, paper-ready diagram showing how your CAD pipeline maps onto a BERT model:
-
 ```mermaid
 flowchart TD
     %% =========================
