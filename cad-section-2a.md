@@ -1,7 +1,7 @@
 
 ---
-
 # **2. Methods**
+---
 
 ## 2.1 Overview
 
