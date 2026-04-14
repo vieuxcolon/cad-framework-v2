@@ -294,10 +294,10 @@ Output:
 
 Current functionalities:
 
-* ✔ Full **Method section (publication-grade)**
-* ✔ **System diagram (Figure 1)**
-* ✔ **Threat model (review-critical)**
-* ✔ **Algorithm 1 (ready for paper)**
+*  Full **Method section (publication-grade)**
+*  **System diagram (Figure 1)**
+*  **Threat model (review-critical)**
+*  **Algorithm 1 (ready for paper)**
 
 ---
 
@@ -307,4 +307,3 @@ Current functionalities:
 * or building **Experimental Results section with tables/plots**
 * or drafting **Rebuttal strategy (how to survive peer review)**
 
-Just tell me which direction.
