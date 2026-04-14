@@ -1,7 +1,7 @@
 
 ---
 
-#  STEP 1 — Results Section (paper-ready)
+#  STEP 1 — Results Section
 
 You can drop this almost directly into a paper.
 
