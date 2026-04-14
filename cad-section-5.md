@@ -104,7 +104,7 @@ We plot:
 
 There is a **clear bimodal separation**, confirming:
 
-> CAD risk score is a valid discriminator of latent structural anomalies.
+ CAD risk score is a valid discriminator of latent structural anomalies.
 
 ---
 
@@ -160,7 +160,7 @@ Removing any signal reduces performance → **confirms multi-signal necessity**
 
 Backdoors manifest as:
 
-> **geometric deformation of representation space**
+ **geometric deformation of representation space**
 
 not output-level anomalies.
 
