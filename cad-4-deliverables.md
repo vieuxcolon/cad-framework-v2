@@ -1,3 +1,8 @@
+
+---
+#  Section 7 — CAD Deliverables
+---
+
 #  1. NeurIPS LaTeX Paper (COMPLETE SKELETON)
 
 ##  `cad_paper/main.tex`
