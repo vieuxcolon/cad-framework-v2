@@ -193,7 +193,7 @@ CAD is:
 
 #  5.7 Core Finding (paper-level claim)
 
-> Backdoored models do not only behave differently — they occupy a **different region of representation geometry space**, measurable via a unified risk function.
+ Backdoored models do not only behave differently — they occupy a **different region of representation geometry space**, measurable via a unified risk function.
 
 ---
 
