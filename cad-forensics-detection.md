@@ -278,7 +278,7 @@ CAD reframes backdoor detection as representation geometry auditing rather than 
 
 ---
 
-## CAD, a forensic framework for detecting architectural anomalies and backdoors in neural networks via representation geometry analysis. CAD enables model-level auditing without requiring poisoned data or trigger knowledge, offering a scalable direction for secure deployment of pretrained models.
+ CAD, a forensic framework for detecting architectural anomalies and backdoors in neural networks via representation geometry analysis. CAD enables model-level auditing without requiring poisoned data or trigger knowledge, offering a scalable direction for secure deployment of pretrained models.
 
 ---
 
