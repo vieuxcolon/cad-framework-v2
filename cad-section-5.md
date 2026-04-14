@@ -68,9 +68,9 @@ CAD significantly outperforms classical baselines because:
 
 CAD shows:
 
-* **steeper initial slope**
-* **higher true positive rate at low false positives**
-* **stable separation across architectures**
+* steeper initial slope
+* higher true positive rate at low false positives
+* stable separation across architectures
 
 Formal statement:
 
@@ -160,7 +160,7 @@ Removing any signal reduces performance → **confirms multi-signal necessity**
 
 Backdoors manifest as:
 
- **geometric deformation of representation space**
+ geometric deformation of representation space
 
 not output-level anomalies.
 
