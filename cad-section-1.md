@@ -33,7 +33,7 @@ flowchart TD
         C --> T[Trigger Injector]
         T --> D2[Modified Embeddings]
         D2 --> E2[Transformer Encoder Layers]
-        E2 --> F2[Hidden States (Poisoned)]
+        E2 --> F2[Hidden States Poisoned]
 
         %% Poisoned Probe
         F2 --> G2[Embedding Probe - Poisoned]
