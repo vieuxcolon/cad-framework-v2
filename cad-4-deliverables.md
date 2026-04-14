@@ -1,5 +1,3 @@
-**4 concrete deliverables**.
-
 ---
 
 #  1. NeurIPS LaTeX Paper (COMPLETE SKELETON)
@@ -138,7 +136,7 @@ R(M) =
 \right]
 ]
 
-✔ maps to:
+ maps to:
 
 * `[Injector] delta_mean`
 
@@ -197,7 +195,7 @@ We simulate:
 
 #  4. BENCHMARK RUNNER (AUTOMATIC EXPERIMENTS)
 
-## 📄 `cad/benchmarks/run_cad_benchmark.py`
+##  `cad/benchmarks/run_cad_benchmark.py`
 
 ```python
 # cad/benchmarks/run_cad_benchmark.py
@@ -269,7 +267,7 @@ def compute_roc(results):
 
 #  6. FIGURE GENERATION (FOR PAPER)
 
-## 📄 Embedding separation plot
+##  Embedding separation plot
 
 ```python
 import matplotlib.pyplot as plt
@@ -308,7 +306,7 @@ def plot_risk_hist(clean_scores, poison_scores):
 
 You will include:
 
-### ✔ Strengths
+###  Strengths
 
 * First **architecture-level backdoor detector**
 * No training required
@@ -317,7 +315,7 @@ You will include:
 
 ---
 
-### ⚠ Limitations (IMPORTANT FOR ACCEPTANCE)
+###  Limitations (IMPORTANT FOR ACCEPTANCE)
 
 * Sensitive to probe selection
 * Requires stable embedding space assumption
@@ -337,14 +335,14 @@ You will include:
 
 #  FINAL STATUS
 
-### ✔ Formal theory (risk function)
+###  Formal theory (risk function)
 
-### ✔ Experimental protocol
+###  Experimental protocol
 
-### ✔ Benchmark runner
+###  Benchmark runner
 
-### ✔ ROC + figures
+###  ROC + figures
 
-### ✔ Paper structure (NeurIPS format)
+###  Paper structure (NeurIPS format)
 
-#  Next steps: auto-generate figures, run experiments, compile LaTeX automatically
+###  Next steps: auto-generate figures, run experiments, compile LaTeX automatically
