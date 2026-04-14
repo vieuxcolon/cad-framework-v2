@@ -102,7 +102,7 @@ R(M) =
 \right|_2
 ]
 
-✔ maps to:
+ maps to:
 
 * `clean_component`
 * `poisoned_component`
@@ -116,7 +116,7 @@ R(M) =
 1 - \text{ARI}(C_M, C_{\tilde{M}})
 ]
 
-✔ maps to:
+ maps to:
 
 * `clean_clusters`
 * `poisoned_clusters`
