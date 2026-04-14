@@ -1,7 +1,7 @@
 
 ---
-
 #  Section 3 — CAD Risk Function (Formal Definition)
+---
 
 ## 3.1 Notation (aligned with your code)
 
