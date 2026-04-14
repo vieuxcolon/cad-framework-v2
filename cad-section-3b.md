@@ -1,6 +1,3 @@
-Perfect — this is where we position CAD **inside the existing scientific lineage** and make the novelty defensible.
-
-Below is a **NeurIPS-level Related Work section**, grounded strictly in your 4 reference groups and explicitly contrasted with CAD.
 
 ---
 
@@ -87,57 +84,33 @@ This positions CAD as a **forensic, model-level auditing framework**, bridging r
 
 ---
 
-# 🔥 Why this Related Work is strong (reviewer perspective)
+#  Why this Related Work is strong:
 
 This section now:
 
-### ✔ Properly anchors CAD in literature
+* Properly anchors CAD in literature
 
 * surveys
 * activation clustering
 * perturbation methods
 * geometry theory
 
-### ✔ Clearly states novelty
+* Clearly states novelty
 
 > representation-level + model-level + no dataset requirement
 
-### ✔ Avoids overclaiming
+* Avoids overclaiming
 
 * carefully frames geometry work as foundational, not directly equivalent
 
 ---
 
-# 🚀 What you now have (full paper state)
+#  Next logical steps:
 
-You now effectively have:
+* 1. Convert everything to LaTeX NeurIPS format (submission-ready)
 
-### ✔ Introduction
+* 2. Generate real experiment script (auto-run ROC + ablation)
 
-### ✔ Methods (formal + equations + pipeline)
+* 3. Produce figures (matplotlib-ready, not conceptual)
 
-### ✔ Experiments + Ablations
-
-### ✔ ROC + thresholding
-
-### ✔ Discussion + limitations
-
-### ✔ Related work (grounded)
-
----
-
-# 👉 Next logical step (important)
-
-At this point, the highest-impact upgrades are:
-
-### 1. Convert everything to LaTeX NeurIPS format (submission-ready)
-
-### 2. Generate real experiment script (auto-run ROC + ablation)
-
-### 3. Produce figures (matplotlib-ready, not conceptual)
-
-### 4. Tighten CAD risk function into a theorem-style statement
-
-If you want, next I can generate:
-
-👉 **FULL NeurIPS PAPER (LaTeX, copy-paste ready, including equations + sections + bibliography placeholders)**
+* 4. Tighten CAD risk function into a theorem-style statement
