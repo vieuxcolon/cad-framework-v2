@@ -199,15 +199,15 @@ CAD is:
 
 #  5.8 What makes this strong - reviewer perspective
 
-###  ROC curves (mandatory acceptance criterion)
+*  ROC curves (mandatory acceptance criterion)
 
-###  ablation study (proves causality of components)
+*  ablation study (proves causality of components)
 
-###  distribution separation (visual proof)
+*  distribution separation (visual proof)
 
-###  threshold stability (deployment relevance)
+*  threshold stability (deployment relevance)
 
-###  baseline comparison (scientific grounding)
+*  baseline comparison (scientific grounding)
 
 ---
 
