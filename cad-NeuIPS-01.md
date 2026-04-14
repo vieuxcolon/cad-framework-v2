@@ -140,38 +140,38 @@ Here is your **paper-ready diagram**:
 
 flowchart TD
 
-A["Pretrained Model M"] --> B["Probe Generator P(x)"]
-B --> C["Clean Pass f_M(x)"]
-B --> D["Perturbed Pass f_M(δ(x))"]
+A[Pretrained Model M] --> B[Probe Generator P(x)]
+B --> C[Clean Pass f_M(x)]
+B --> D[Perturbed Pass f_M(δ(x))]
 
-C --> E1["Embedding Space Z"]
-D --> E2["Embedding Space Z'"]
+C --> E1[Embedding Space Z]
+D --> E2[Embedding Space Z']
 
-E1 --> F1["Clustering h(Z)"]
-E2 --> F2["Clustering h(Z')"]
+E1 --> F1[Clustering h(Z)]
+E2 --> F2[Clustering h(Z')]
 
-E1 --> G1["Covariance Σ_clean"]
-E2 --> G2["Covariance Σ_pert"]
+E1 --> G1[Covariance Σ_clean]
+E2 --> G2[Covariance Σ_pert]
 
-F1 --> H1["Cluster Divergence S_cluster"]
+F1 --> H1[Cluster Divergence S_cluster]
 F2 --> H1
 
-G1 --> H2["Geometry Drift S_geo"]
+G1 --> H2[Geometry Drift S_geo]
 G2 --> H2
 
-C --> H3["Embedding Instability S_emb"]
+C --> H3[Embedding Instability S_emb]
 D --> H3
 
-A --> H4["Output Sensitivity S_pert"]
+A --> H4[Output Sensitivity S_pert]
 
-H1 --> I["Risk Aggregation R(M)"]
+H1 --> I[Risk Aggregation R(M)]
 H2 --> I
 H3 --> I
 H4 --> I
 
-I --> J{"Threshold τ"}
-J -->|High| K["BACKDOOR"]
-J -->|Low| L["CLEAN"]
+I --> J{Threshold τ}
+J -->|High| K[BACKDOOR]
+J -->|Low| L[CLEAN]
 
 ---
 
