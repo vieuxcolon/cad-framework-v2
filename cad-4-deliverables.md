@@ -1,6 +1,6 @@
 #  1. NeurIPS LaTeX Paper (COMPLETE SKELETON)
 
-## 📄 `cad_paper/main.tex`
+##  `cad_paper/main.tex`
 
 ```latex
 % cad_paper/main.tex
