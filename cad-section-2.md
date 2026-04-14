@@ -1,7 +1,7 @@
 
 ---
-
 #  Section 2 — Related Work (CAD Framework Context)
+---
 
 ## 2.1 Backdoor Learning and Attack Surfaces
 
