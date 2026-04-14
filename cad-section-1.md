@@ -9,7 +9,6 @@ Here’s a clean, paper-ready diagram showing how your CAD pipeline maps onto a 
 
 ```mermaid
 flowchart TD
-
     %% =========================
     %% INPUT LAYER
     %% =========================
@@ -65,7 +64,6 @@ flowchart TD
     %% OUTPUT
     %% =========================
     L --> M[Audit Report JSON]
-
 ```
 
 ### Key insight (this is publishable )
