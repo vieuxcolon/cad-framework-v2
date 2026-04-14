@@ -141,7 +141,7 @@ Here is your **paper-ready diagram**:
 ```mermaid
 flowchart TD
 
-A[Pretrained Model M] --> B[Probe Generator P(x)]
+A[Pretrained Model M] --> B[Probe Generator P_x_]
 B --> C[Clean Pass f_M(x)]
 B --> D[Perturbed Pass f_M(δ(x))]
 
