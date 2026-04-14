@@ -1,7 +1,5 @@
 #  1. NeurIPS LaTeX Paper (COMPLETE SKELETON)
 
-This is a **clean, submission-ready base** aligned with your CAD system.
-
 ## 📄 `cad_paper/main.tex`
 
 ```latex
@@ -333,14 +331,14 @@ You will include:
 
 #  FINAL STATUS
 
-###  Formal theory (risk function)
+*  Formal theory (risk function)
 
-###  Experimental protocol
+*  Experimental protocol
 
-###  Benchmark runner
+*  Benchmark runner
 
-###  ROC + figures
+*  ROC + figures
 
-###  Paper structure (NeurIPS format)
+*  Paper structure (NeurIPS format)
 
-###  Next steps: auto-generate figures, run experiments, compile LaTeX automatically
+*  Next steps: auto-generate figures, run experiments, compile LaTeX automatically
