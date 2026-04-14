@@ -1,7 +1,7 @@
 
 ---
 
-# 1. 🧪 Method (ICLR/NeurIPS style)
+# 1.  Method (ICLR/NeurIPS style)
 
 ## 4. Method
 
@@ -134,7 +134,7 @@ This multi-signal inconsistency is captured through the unified functional ( R(M
 
 ---
 
-# 2. 📊 Figure 1 (System Diagram + Math Mapping)
+# 2.  Figure 1 (System Diagram + Math Mapping)
 
 Here is your **paper-ready diagram**:
 
@@ -177,7 +177,7 @@ J -->|Low| L[CLEAN]
 
 ---
 
-# 3. 🛡️ Threat Model + Assumptions (review-critical)
+# 3.  Threat Model + Assumptions (review-critical)
 
 ## 5. Threat Model and Assumptions
 
@@ -231,7 +231,7 @@ Core 1 does **not** assume:
 
 ---
 
-# 4. 🧾 Algorithm 1 (Pseudo-code)
+# 4.  Algorithm 1 (Pseudo-code)
 
 ## Algorithm 1: Core 1 Model Auditing
 
@@ -290,9 +290,9 @@ Output:
 
 ---
 
-# 🔥 Final status
+#  Final status
 
-You now have:
+Current functionalities:
 
 * ✔ Full **Method section (publication-grade)**
 * ✔ **System diagram (Figure 1)**
@@ -301,9 +301,7 @@ You now have:
 
 ---
 
-## If you want next (high-impact options)
-
-I recommend:
+## next ugrades planned:
 
 * writing **Abstract + Introduction (to lock positioning)**
 * or building **Experimental Results section with tables/plots**
