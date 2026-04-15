@@ -3,13 +3,13 @@
 
 CAD core2 fully upgraded implementation step by step:
 
-✔ injects a backdoor
-✔ saves the model
-✔ reloads the compromised model
-✔ uses realistic trigger inputs
-✔ computes clean vs poisoned audits
-✔ applies a  formal detection threshold 
-✔ outputs a clean, interpretable decision
+1. injects a backdoor
+2. saves the model
+3. reloads the compromised model
+4. uses realistic trigger inputs
+5. computes clean vs poisoned audits
+6. applies a  formal detection threshold 
+7. outputs a clean, interpretable decision
 
 ---
 
