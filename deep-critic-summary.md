@@ -1,6 +1,6 @@
 
 ---
-**DeepInspect: A Black-box Trojan Detection and Mitigation Framework for Deep Neural Networks**.
+# **DeepInspect: A Black-box Trojan Detection and Mitigation Framework for Deep Neural Networks**.
 
 ---
 
