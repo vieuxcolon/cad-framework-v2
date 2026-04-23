@@ -1,11 +1,9 @@
 
 ---
 # **Architectures for Decision Making in Robotics**
----
 
 *From reactive to learning-based approaches*
 INSA Lyon – CITI Lab / Inria Chroma Team
-
 ---
 
 # **1. What is Decision Making in Robotics?**
