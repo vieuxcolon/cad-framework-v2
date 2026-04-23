@@ -1,8 +1,3 @@
-Here’s a cleaner, well-structured version of your robotics notes with clearer hierarchy, flow, and terminology.
-
----
-
-
 
 ---
 # **Architectures for Decision Making in Robotics**
