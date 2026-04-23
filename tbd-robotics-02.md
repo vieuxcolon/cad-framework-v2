@@ -240,27 +240,145 @@ To reduce memory usage:
 
 ---
 
-## **10. Exercises (Conceptual)**
-
-### **Exercise 1**
-
-Apply A* on a graph:
-
-* Use given edge costs
-* Use provided heuristics
-* Track:
-
-  * (g(n)), (h(n)), (f(n))
-  * Node expansion order
+Here is a cleaner and better-structured version of your **Exercises section**, using your two graphs clearly.
 
 ---
 
-### **Exercise 2**
+## **10. Exercises (A* Algorithm Practice)**
 
-* Explore how changing the heuristic affects:
+---
 
-  * Optimality
-  * Computation time
+## **Exercise 1 – Step-by-Step Execution of A***
+
+### **Graph Definition**
+
+* **Start node**: r
+* **Goal node**: but
+
+### **Edges (undirected graph)**
+
+```
+r ↔ a (1.5)
+a ↔ b (2)
+b ↔ c (2)
+c ↔ but (4)
+but ↔ e (2)
+e ↔ d (3)
+d ↔ r (2)
+```
+
+### **Heuristic values**
+
+```
+h(a) = 4
+h(b) = 2
+h(c) = 4
+h(d) = 4.5
+h(e) = 2
+h(but) = 0
+```
+
+---
+
+### **Tasks**
+
+Apply the **A*** algorithm and:
+
+* Compute for each visited node:
+
+  * ( g(n) ): cost from start (r → n)
+  * ( h(n) ): heuristic value
+  * ( f(n) = g(n) + h(n) )
+
+* Track:
+
+  * The **order of node expansion**
+  * The **content of the open list (Q)** at each step
+  * The **final optimal path** from **r → but**
+
+---
+
+### **Goal**
+
+Understand:
+
+* How A* selects nodes using **f(n)**
+* How the heuristic influences the search order
+
+---
+
+## **Exercise 2 – Impact of the Heuristic**
+
+### **Graph Definition**
+
+* **Start node**: 1
+* **Goal node**: 7
+
+---
+
+### **Directed Edges**
+
+```
+1 → 3 (2)
+1 → 4 (5)
+1 → 2 (0)
+2 → 3 (1)
+3 → 6 (1)
+4 → 5 (5)
+5 → 3 (3)
+5 → 7 (0)
+6 → 7 (6)
+```
+
+---
+
+### **Heuristic values**
+
+```
+h(1) = 4
+h(2) = 6
+h(3) = 3
+h(4) = 5
+h(5) = 0
+h(6) = 4
+h(7) = 0
+```
+
+---
+
+### **Tasks**
+
+1. Apply **A*** using the given heuristic:
+
+   * Compute ( g(n), h(n), f(n) )
+   * Determine the **path found**
+
+2. Then **modify the heuristic** (e.g., reduce or increase some values) and observe:
+
+   * Does A* still find the **optimal path**?
+   * How does the **node expansion order** change?
+   * Does the algorithm become **faster or slower**?
+
+---
+
+### **Goal**
+
+Understand the role of the heuristic:
+
+* **Admissible heuristic** → guarantees optimality
+* **Overestimated heuristic** → may lead to suboptimal solutions but faster search
+* Trade-off between:
+
+  * **Optimality**
+  * **Computation time**
+
+---
+
+# **Key Learning Outcomes**
+
+* Practice running A* step-by-step
+* Understand how **f(n) = g(n) + h(n)** drives the search
+* See concretely how the **heuristic affects performance and correctness**
 
 ---
 
