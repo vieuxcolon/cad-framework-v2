@@ -1,0 +1,290 @@
+
+---
+
+#  Tutorial 2 — Reinforcement Learning (Corrected Clean Version)
+
+INSA Lyon — Computer Science
+Master MINDS — Robotics
+Laëtitia Matignon
+
+---
+
+# 1. Reminders
+
+## 1.1 Monte-Carlo Prediction
+
+The Monte-Carlo (MC) prediction estimates the value of a state ( s ) as the average of observed returns over episodes:
+
+[
+V(s) = \frac{1}{n} \sum_{i=1}^{n} v(s_i)
+]
+
+where ( v(s_i) ) is the return observed for state ( s ) in episode ( i ):
+
+[
+v(s) = r_1 + \gamma r_2 + \gamma^2 r_3 + \cdots
+]
+
+---
+
+## 1.2 Incremental Monte-Carlo
+
+After each episode:
+
+[
+V(s) \leftarrow V(s) + \alpha \big( v(s) - V(s) \big)
+]
+
+---
+
+## 1.3 TD Prediction
+
+At each step ( \langle s, a, r, s' \rangle ):
+
+[
+V(s) \leftarrow V(s) + \alpha \big( r + \gamma V(s') - V(s) \big)
+]
+
+---
+
+## 1.4 Q-learning
+
+[
+Q(s,a) \leftarrow (1-\alpha)Q(s,a) + \alpha \big( r + \gamma \max_{b} Q(s',b) \big)
+]
+
+Greedy policy:
+
+[
+\pi(s) = \arg\max_a Q(s,a)
+]
+
+---
+
+## 1.5 Approximate Q-learning
+
+Linear approximation:
+
+[
+Q_w(s,a) = \sum_{i=1}^n w_i f_i(s,a)
+]
+
+Update rule:
+
+[
+w_i \leftarrow w_i + \alpha \delta f_i(s,a)
+]
+
+where:
+
+[
+\delta = r + \gamma \max_b Q_w(s',b) - Q_w(s,a)
+]
+
+---
+
+# 2. Exercise 1 — Passive RL
+
+## Given episodes (γ = 1, α = 0.1)
+
+### Episode 1
+
+* Cool → Warm (+2)
+* Warm → Overheated (−10)
+
+### Episode 2
+
+* Cool → Cool (+2)
+* Cool → Warm (+2)
+* Warm → Overheated (−10)
+
+---
+
+## 2.1 Monte-Carlo Prediction (Every-Visit)
+
+### Returns
+
+**Episode 1**
+
+* ( v(\text{Cool}) = 2 - 10 = -8 )
+* ( v(\text{Warm}) = -10 )
+
+**Episode 2**
+
+* ( v(\text{Cool,1}) = 2 + 2 - 10 = -6 )
+* ( v(\text{Cool,2}) = 2 - 10 = -8 )
+
+Average:
+[
+V(\text{Cool}) = \frac{-8 + (-6) + (-8)}{3} = -7.33
+]
+[
+V(\text{Warm}) = -10
+]
+
+---
+
+## 2.2 Incremental Monte-Carlo
+
+Initialization: ( V = 0 )
+
+### Episode 1
+
+* ( V(\text{Cool}) = 0 + 0.1(-8) = -0.8 )
+* ( V(\text{Warm}) = 0 + 0.1(-10) = -1.0 )
+
+---
+
+### Episode 2
+
+**Cool returns:**
+
+* ( v_1 = -6,; v_2 = -8 \Rightarrow v = -7 )
+
+Update:
+
+* ( V(\text{Cool}) = -0.8 + 0.1(-7 + 0.8) = -1.42 )
+
+* ( V(\text{Warm}) = -1.0 + 0.1(-10 + 1.0) = -1.9 )
+
+---
+
+## 2.3 TD Prediction
+
+### Episode 1
+
+* Cool:
+  [
+  V(C) = 0 + 0.1(2 + 0 - 0) = 0.2
+  ]
+
+* Warm:
+  [
+  V(W) = 0 + 0.1(-10) = -1
+  ]
+
+---
+
+### Episode 2
+
+* Cool → Cool:
+  [
+  V(C) = 0.2 + 0.1(2 + 0.2 - 0.2) = 0.4
+  ]
+
+* Cool → Warm:
+  [
+  V(C) = 0.4 + 0.1(2 - 1 - 0.4) = 0.46
+  ]
+
+* Warm:
+  [
+  V(W) = -1 + 0.1(-10) = -1.9
+  ]
+
+---
+
+## Final TD values
+
+| State      | Value |
+| ---------- | ----- |
+| Cool       | 0.46  |
+| Warm       | -1.9  |
+| Overheated | 0     |
+
+---
+
+# 2.4 Active RL — Q-learning
+
+## Episode 1
+
+* ( Q(C,F) = 0 + 0.1(2) = 0.2 )
+* ( Q(W,F) = 0 + 0.1(-10) = -1 )
+
+## Episode 2
+
+* ( Q(C,F) = 0.2 + 0.1(2 + 0.2 - 0.2) = 0.4 )
+* ( Q(C,F) = 0.4 + 0.1(2 - 0.4) = 0.56 )
+* ( Q(W,F) = -1 + 0.1(-10 + 1) = -1.9 )
+
+---
+
+## Final Q-table
+
+| State      | Slow | Fast |
+| ---------- | ---- | ---- |
+| Cool       | 0    | 0.56 |
+| Warm       | 0    | -1.9 |
+| Overheated | 0    | 0    |
+
+---
+
+## Greedy policy
+
+* Cool → Fast
+* Warm → Slow
+
+---
+
+# 3. Exercise 2 — Approximate Q-learning
+
+## Q-function
+
+[
+Q(s,a) = 4 f_{DOT}(s,a) - 1 f_{GST}(s,a)
+]
+
+Given:
+
+* ( f_{DOT}(s,NORTH) = 1 )
+* ( f_{GST}(s,NORTH) = 1 )
+
+So:
+
+[
+Q(s,NORTH) = 3
+]
+
+---
+
+## Step
+
+Reward: ( r = -500 ), terminal state ⇒ ( \max Q(s') = 0 )
+
+### TD error
+
+[
+\delta = -500 - 3 = -503
+]
+
+---
+
+## Weight updates (α = 0.004)
+
+[
+w_{DOT} = 4 + 0.004(-503)(1) = 1.988
+]
+
+[
+w_{GST} = -1 + 0.004(-503)(1) = -3.012
+]
+
+---
+
+## Updated Q-function
+
+[
+Q(s,a) = 1.988 f_{DOT}(s,a) - 3.012 f_{GST}(s,a)
+]
+
+---
+
+# 4. Key Takeaways
+
+* MC → averages full returns
+* TD → bootstraps from next state
+* Q-learning → optimal control via max over actions
+* Approximate Q-learning → replaces table with features
+* Generalization solves scalability issues of tabular RL
+
+---
