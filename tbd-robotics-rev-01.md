@@ -1,4 +1,3 @@
-Below is a **comprehensive set of non-MCQ exam-style questions and answers** based on your robotics revision notes. The goal is to train **conceptual understanding, explanation ability, and A* procedural fluency**, as expected in exams.
 
 ---
 
